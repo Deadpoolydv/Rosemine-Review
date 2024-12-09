@@ -185,27 +185,27 @@ input {
 		})
 
 
-	// 	$('#google_review').on('submit', function (e) {
+	$('#google_review').on('submit', function (e) {
 
-    // 	e.preventDefault();
-    // 	base_url = 'https://rosemine.in/';
-	// 		$.ajax({
-	// 			type: 'POST',
-	// 			url: base_url + 'lead/google_review_process',
-	// 			data: $('#google_review').serialize(),
-	// 		}).done(function(response) {
+    	e.preventDefault();
+    	base_url = 'https://rosemine.in/';
+			$.ajax({
+				type: 'POST',
+				url: base_url + 'lead/google_review_process',
+				data: $('#google_review').serialize(),
+			}).done(function(response) {
 
-	// 		response = JSON.parse(response);
-	// 		if(response.success==true){
-	// 			window.location.replace(base_url+'lead/thankyou_review');
-	// 		}else{
-	// 			alert(response.msg);
-	// 		}
+			response = JSON.parse(response);
+			if(response.success==true){
+				window.location.replace(base_url+'lead/thankyou_review');
+			}else{
+				alert(response.msg);
+			}
 
-	//     }).fail(function(jqXHR, textStatus) {
-	//       alert(textStatus);
-	//     });
-	//   });
+	    }).fail(function(jqXHR, textStatus) {
+	      alert(textStatus);
+	    });
+	  });
 	</script>
 </body>
 
