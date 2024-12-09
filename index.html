@@ -197,13 +197,13 @@ base_url = '/';
 
 	response = JSON.parse(response);
 	if(response.success==true){
-		window.location.replace(base_url+'lead/thankyou_review.html');
+		window.location.replace(base_url+'thankyou_review.html');
 	}else{
 		alert(response.msg);
 	}
 
 }).fail(function(jqXHR, textStatus) {
-	window.location.replace(base_url+'lead/thankyou_review.html');
+	window.location.replace(base_url+'thankyou_review.html');
 });
 });
 	</script>
